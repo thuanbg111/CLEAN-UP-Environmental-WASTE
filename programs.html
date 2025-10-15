@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Programs — CLEAN UP Environmental WASTE</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" href="images/logo.png">
+</head>
+<body>
+<header class="header"><div class="container nav">
+  <a class="brand" href="index.html" aria-label="Home"><img src="images/logo.png" alt="CLEAN UP Environmental WASTE logo"></a>
+  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="links" aria-label="Main">
+    <a href="about.html">About</a>
+    <a href="programs.html" class="active">Programs</a>
+    <a href="governance.html">Governance</a>
+    <a href="contact.html" class="btn btn-primary">Contact</a>
+  </nav>
+</div></header>
+
+<main class="section container">
+  <h1>Programs</h1>
+  <div class="grid-3">
+    <article class="card">
+      <img src="images/land.jpg" alt="Community Cleanups">
+      <div class="card-body">
+        <h3>Community Cleanups</h3>
+        <p>Regular neighborhood, park, and river cleanups to remove litter and illegal dumping.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/jobs.jpg" alt="Recycling & Waste Diversion">
+      <div class="card-body">
+        <h3>Recycling & Waste Diversion</h3>
+        <p>Collection events and sorting stations that keep plastics, paper, and metals out of landfills.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/relief.jpg" alt="Education & Advocacy">
+      <div class="card-body">
+        <h3>Education & Outreach</h3>
+        <p>School talks, workshops, and toolkits that teach reduction, reuse, recycling, and composting.</p>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer class="footer"><div class="container grid">
+  <div><img src="images/logo.png" alt="" style="width:160px;height:auto;margin-bottom:.5rem;">
+    <div class="small">© <span id="year"></span> CLEAN UP Environmental WASTE</div>
+    <div class="small">Nevada Nonprofit • 501(c)(3) • EIN: 33-4971507</div></div>
+  <div>
+    <div class="small"><strong>Mission:</strong><br>Protect the environment by reducing waste, promoting recycling, and inspiring communities to keep our planet clean.</div>
+    <div class="social-row">
+      <a class="social-icon" href="https://www.facebook.com/cleanupenvironmental.waste/" aria-label="Facebook (opens in new tab)" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M22 12a10 10 0 1 0-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.88h-2.34v6.99A10 10 0 0 0 22 12z" fill="#1877F2"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div><div class="small"><strong>Address:</strong><br>7534 W DIABLO DR, Las Vegas, NV 89113, USA<br>
+    <strong>Email:</strong> <a href="mailto:contact@cleanenvironmentwaste.pw">contact@cleanenvironmentwaste.pw</a><br>
+    <strong>Phone:</strong> <a href="tel:+19283007821">+1 (928) 300-7821</a></div></div>
+</div></footer>
+
+<script>
+  const b=document.querySelector('.menu-toggle'), l=document.querySelector('.links');
+  if(b&&l){b.addEventListener('click',()=>{const o=getComputedStyle(l).display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
